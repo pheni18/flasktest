@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>プロフィール</h3>
+<form action="update" method="POST">
+    name: <input type="text" name="name" value={{user.name}}>
+    age: <input type="text" name="age" value={{user.age}}>
+    sex: <input type="text" name="sex" value={{user.sex}}>
+    <input type="submit" name="" value="update">
+</form>
+{% endblock %}
